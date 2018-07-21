@@ -9,6 +9,8 @@ def my_find(collection)
     if yield(collection[i])
       return collection[i]
     end
+    #if the block returns true, the value will return true.
+    #if value returns false then it will skip the if loop and proceed to nxt element
     i = i + 1
   end
 end
